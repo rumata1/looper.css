@@ -1,0 +1,48 @@
+/*поставить .circleContainer относительно какого-нибудь узла*/
+
+.circleContainer {
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    animation: pulse infinite ease-in-out 2s; 
+}
+.circleContainer__one {
+    position: absolute;
+    border: solid 1px red;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.circleContainer__two {
+    position: absolute;
+    border: solid 1px red;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.img {
+    position: relative;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 0;
+        transform: scale(0.1,0.1);
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0; 
+        transform: scale(1,1);
+    }
+        }
